@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form" method="get">
+      <div class="div1">
+        <h2 id="h1s">Create Application</h2>
+        <button type="submit">submit</button>
+        <!-- <input type="submit" value="Save" /> -->
+        <!-- <input type="reset" value="Clear" class=""/> -->
+        <button type="reset">Clear</button>
+      </div>
+
+      <section class="container">
+        <br />
+        <div class="container-1">
+          <label for="useillustration">Use Illustration</label>
+          <input
+            type="checkbox"
+            name="useillustration"
+            id="useillustration"
+            class="useillustration"
+          />
+
+          <label for="illustration-id">illustration-id</label>
+          <input
+            type="text"
+            name="illustration-id"
+            disabled
+            id="illustration-id"
+          />
+
+          <label for="applicationtype">
+            Application Type <span style="color: red">*</span>
+          </label>
+
+          <select name="applicationtype" id="applicationtype" class="mandatory">
+            <option></option>
+            <option value="single">Single</option>
+            <option value="joint">Joint</option>
+            <option value="trust-individual">Trust-Individual</option>
+            <option value="trust-corporate">Trust-Corporate</option>
+            <option value="trust">Trust</option>
+          </select>
+          <div></div>
+          <div></div>
+          <label for="assigned-advisor"
+            >assigned-advisor <span style="color: red">*</span></label
+          >
+
+          <div class="searches">
+            <input
+              type="text"
+              name="assigned-advisor"
+              class="assigned-advisor mandatory"
+              id="assigned-advisor"
+              placeholder="assigned-advisor"
+            />
+            <svg
+              class="search"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <div></div>
+          <div></div>
+          <label for="product">product <span style="color: red">*</span></label>
+          <div class="searches">
+            <input type="text" name="product" id="product" class="mandatory" />
+            <svg
+              class="search"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <label for="application-date">Application Date </label>
+          <input
+            type="date"
+            name="application-date"
+            id="application-date"
+            placeholder="application-date"
+            class="mandatory"
+          />
+          <label for="accounttype"
+            >Accounttype <span style="color: red">*</span></label
+          >
+          <div class="divs">
+            <select name="accounttype" id="accounttype" class="mandatory">
+              <option></option>
+              <option value="live">Live</option>
+              <option value="partlive">Part Live/Part Monitored</option>
+              <option value="multiple">Multiple Monitored</option>
+              <option value="single">Single Monitored</option>
+            </select>
+            <label for="checks1">InformedConsentProvided</label>
+            <input type="checkbox" id="checks1" name="checks1" />
+          </div>
+          <label for="entity">Entity <span style="color: red">*</span></label>
+          <div class="searches">
+            <input type="text" name="entity" id="entity" class="mandatory" />
+            <svg
+              class="search"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <div></div>
+          <div></div>
+          <label for="basecurrency"
+            >Base Currency <span style="color: red">*</span></label
+          >
+          <input
+            type="text"
+            id="basecurrency"
+            name="basecurrency"
+            class="mandatory"
+          />
+          <label for="applicationno">Application No </label>
+          <div class="divs">
+            <input
+              type="text"
+              id="applicationno"
+              name="applicationno"
+              disabled
+            />
+            <label for="checks2">KidProvided</label>
+            <input type="checkbox" id="checks2" name="checks2" />
+          </div>
+          <label for="aad">Application Active Data</label>
+          <input type="text" id="aad" name="aad" />
+          <label for="businesstatus">Business Status</label>
+          <input
+            type="text"
+            id="businesstatus"
+            name="businesstatus"
+            disabled
+            value="inprogress"
+          />
+          <div></div>
+          <div></div>
+          <label for="focode">FO Code</label>
+          <div class="searches">
+            <input type="text" name="focode" id="focode" disabled />
+            <svg
+              class="search"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <label for="printLocation">Print Location</label>
+          <input type="text" id="printLocation" name="printLocation" disabled />
+          <label for="bussinessFlag">Bussiness Flag</label>
+          <input type="text" id="bussinessFlag" name="bussinessFlag" disabled />
+          <div></div>
+          <div></div>
+          <label for="pepFlag">PEP Flag</label>
+          <select name="pepFlag" id="pepFlag">
+            <option></option>
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+          <label for="pepdescription">PEP Description</label>
+          <input type="text" id="pepdescription" name="pepdescription" />
+          <label for="risk1">risk1</label>
+          <input type="checkbox" name="risk1" id="risk1" />
+          <label for="risk2">risk2</label>
+          <input type="checkbox" name="risk2" id="risk2" />
+          <label for="risk3">risk3</label>
+          <input type="checkbox" name="risk3" id="risk3" />
+          <label for="riskdescription">Rank Description</label>
+          <input type="text" id="riskdescription" name="riskdescription" />
+          <label for="arf">Active Referral Flag</label>
+          <input type="checkbox" name="arf" id="arf" />
+          <label for="rfr">Reason For Risk</label>
+          <input type="text" id="rfr" name="rfr" />
+          <label for="pep">Reason For PEP</label>
+          <input type="text" id="pep" name="pep" />
+          <br />
+        </div>
+      </section>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

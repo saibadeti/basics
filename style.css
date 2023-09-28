@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: linear-gradient(to left, #cfd9df 0%, #e2ebf0 100%);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#useillustration {
+  width: 10%;
+  height: 22px !important;
+}
+.search {
+  width: 18px;
+}
+.container-1 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr 1fr;
+  column-gap: 50px;
+  row-gap: 20px;
+  justify-items: start;
+  align-items: center;
+  width: 100%;
+}
+.searches {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.container-1 input,
+.searches input,
+.container-1 select {
+  width: 100%;
+  height: 22px;
+}
+.container-1 :nth-child(even) {
+  justify-self: start;
+}
+
+.container-1 :nth-child(odd) {
+  justify-self: start;
+}
+.divs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+#checks1 {
+  width: 10%;
+  height: 22px;
+}
+#checks2 {
+  width: 10%;
+  height: 22px;
+}
+#risk1 {
+  width: 10%;
+  height: 22px;
+}
+#risk2 {
+  width: 10%;
+  height: 22px;
+}
+#risk3 {
+  width: 10%;
+  height: 22px;
+}
+#arf {
+  width: 10%;
+  height: 22px;
+}
+.div1 {
+  display: flex;
+  gap: 50px;
+  background-color: #fab005;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 20px 100px;
+  border-radius: 5px;
+}
+
+.div1 :nth-child(1) {
+  margin-right: auto;
+}
+.div1 button {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: 2px #9c36b5 solid;
+}
+.container-1 input,
+.container-1 select {
+  border: 2px #adb5bd solid;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.container-1 input.mandatory.success,
+.container-1 select.mandatory.success {
+  border: 2px #51cf66 solid;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.container-1 input.mandatory.error,
+.container-1 select.mandatory.error {
+  border: 2px red solid;
+  border-radius: 5px;
+  padding-left: 5px;
+}
